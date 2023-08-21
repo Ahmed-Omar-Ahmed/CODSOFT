@@ -1,5 +1,9 @@
-/* Import Google font - Poppins */
+$primary: #0a0a0a;
+$secondary: #f4f0f0;
+$accent: #7692ff;
+
 @import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -11,8 +15,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  // background: #e0e3eb;
-  background-color: #000;
+  background-color: $primary;
 }
 .container {
   position: relative;
@@ -20,7 +23,7 @@ body {
   width: 100%;
   border-radius: 12px;
   padding: 10px 20px 20px;
-  background: #fff;
+  background-color: $secondary;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
 
   .display {
@@ -31,9 +34,9 @@ body {
     text-align: right;
     margin-bottom: 10px;
     font-size: 25px;
-    color: #000e1a;
+    color: $primary;
     pointer-events: none;
-    background-color: #eee;
+    background-color: $secondary;
     border-radius: 12px 12px 0 0;
     padding-right: 1rem;
   }
@@ -48,15 +51,15 @@ body {
       border: none;
       font-size: 20px;
       cursor: pointer;
-      background-color: #000;
-      color: #fff;
+      background-color: $primary;
+      color: $secondary;
 
       &:active {
         transform: scale(0.99);
       }
 
       &.operator {
-        color: #2f9fff;
+        color: $accent;
       }
     }
   }

@@ -33,7 +33,7 @@ body {
   font-size: 25px;
   color: #0a0a0a;
   pointer-events: none;
-  background-color: #f4f0f0;
+  background-color: color-mix(in srgb, #f4f0f0 85%, #0a0a0a);
   border-radius: 12px 12px 0 0;
   padding-right: 1rem;
 }

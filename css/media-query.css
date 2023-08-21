@@ -1,0 +1,117 @@
+@media screen and (width < 1280px) {
+  .container #Home {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .container #Home main {
+    width: 100%;
+  }
+  .container #Home main article {
+    align-items: center;
+  }
+  .container #Home main article p {
+    text-align: center;
+  }
+  .container #Home figure {
+    width: 50%;
+  }
+  .container #Experience h1 {
+    text-align: center;
+  }
+  .container #Projects h1 {
+    text-align: center;
+  }
+  .container #Contact h1 {
+    text-align: center;
+  }
+}
+@media screen and (width < 1024px) {
+  .container #About {
+    flex-direction: column;
+  }
+  .container #About article {
+    width: 100%;
+  }
+  .container #About article h1 {
+    text-align: center;
+  }
+  .container #About article p {
+    text-align: center;
+  }
+  .container #About aside {
+    width: 100%;
+  }
+  .container #About aside .icon-container span {
+    flex: 0 1 15%;
+  }
+  .container #Experience .experience-container .experience-card .exp-body header {
+    flex-direction: column;
+  }
+  .container #Contact .contact-container form {
+    width: 100%;
+  }
+  .container #Contact .contact-container figure {
+    display: none;
+  }
+}
+@media screen and (width < 768px) {
+  .title {
+    font-size: 2.75rem;
+  }
+  .sub-title {
+    font-size: 1.75rem;
+  }
+  .container header nav #Menu {
+    display: block;
+  }
+  .container header nav ul.desk-nav {
+    display: none;
+  }
+  .container #Home main article p {
+    font-size: 1rem;
+  }
+  .container footer .footer-content .page-map span a {
+    font-size: 1.125rem;
+  }
+}
+@media screen and (width < 640px) {
+  .title {
+    font-size: 2.25rem;
+  }
+  .sub-title {
+    font-size: 1.25rem;
+  }
+  section {
+    padding: 2rem 0.25rem;
+  }
+  .container header nav .logo {
+    width: 60px;
+  }
+  .container #Home main article h2 {
+    text-align: center;
+  }
+  .container #Home main article h2 span {
+    display: block;
+  }
+  .container #About aside .icon-container span {
+    flex: 0 1 25%;
+  }
+  .container footer .footer-content {
+    flex-direction: column;
+  }
+  .container footer .footer-content .page-map {
+    width: 100%;
+    border-top: none;
+    border-right: none;
+    border-bottom: 5px solid #f4f0f0;
+  }
+  .container footer .footer-content .page-map span {
+    flex: 1 1 33%;
+  }
+  .container footer .footer-content .page-map span a {
+    font-size: 1.125rem;
+  }
+  .container footer .footer-content .footer-info {
+    width: 100%;
+  }
+}/*# sourceMappingURL=media-query.css.map */

@@ -1,0 +1,236 @@
+$primary: #0a0a0a;
+$secondary: #f4f0f0;
+$accent: #7692ff;
+
+// lg
+@media screen and (width < 1280px) {
+  .container {
+    #Home {
+      flex-direction: column;
+      gap: 2rem;
+
+      main {
+        width: 100%;
+
+        article {
+          align-items: center;
+
+          p {
+            text-align: center;
+          }
+        }
+      }
+
+      figure {
+        width: 50%;
+      }
+    }
+
+    #Experience {
+      h1 {
+        text-align: center;
+      }
+    }
+
+    #Projects {
+      h1 {
+        text-align: center;
+      }
+    }
+
+    #Contact {
+      h1 {
+        text-align: center;
+      }
+    }
+  }
+}
+// md
+@media screen and (width < 1024px) {
+  .container {
+    #About {
+      flex-direction: column;
+
+      article {
+        width: 100%;
+
+        h1 {
+          text-align: center;
+        }
+
+        p {
+          text-align: center;
+        }
+      }
+
+      aside {
+        width: 100%;
+
+        .icon-container {
+          span {
+            flex: 0 1 15%;
+          }
+        }
+      }
+    }
+
+    #Experience {
+      .experience-container {
+        .experience-card {
+          .exp-body {
+            header {
+              flex-direction: column;
+            }
+          }
+        }
+      }
+    }
+
+    #Contact {
+      .contact-container {
+        // flex-direction: column;
+
+        form {
+          width: 100%;
+          //   flex-direction: row;
+          //   flex-wrap: wrap;
+
+          //   .input-group {
+          //     flex: 1 1 calc(50% - 1rem);
+
+          //     label {
+          //       align-self: center;
+          //     }
+
+          //     &:has(textarea) {
+          //       flex: 1 1 100%;
+          //     }
+          //   }
+
+          //   .form-btn {
+          //     flex: 1 1 100%;
+          //   }
+        }
+
+        figure {
+          display: none;
+        }
+      }
+    }
+  }
+}
+// sm
+@media screen and (width < 768px) {
+  .title {
+    font-size: 2.75rem;
+  }
+
+  .sub-title {
+    font-size: 1.75rem;
+  }
+  .container {
+    header {
+      nav {
+        #Menu {
+          display: block;
+        }
+
+        ul.desk-nav {
+          display: none;
+        }
+      }
+    }
+
+    #Home {
+      main {
+        article {
+          p {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    footer {
+      .footer-content {
+        .page-map {
+          span {
+            a {
+              font-size: 1.125rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// xs
+@media screen and (width < 640px) {
+  .title {
+    font-size: 2.25rem;
+  }
+
+  .sub-title {
+    font-size: 1.25rem;
+  }
+
+  section {
+    padding: 2rem 0.25rem;
+  }
+
+  .container {
+    header {
+      nav {
+        .logo {
+          width: 60px;
+        }
+      }
+    }
+
+    #Home {
+      main {
+        article {
+          h2 {
+            text-align: center;
+            span {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+
+    #About {
+      aside {
+        .icon-container {
+          span {
+            flex: 0 1 25%;
+          }
+        }
+      }
+    }
+
+    footer {
+      .footer-content {
+        flex-direction: column;
+        .page-map {
+          width: 100%;
+          border-top: none;
+          border-right: none;
+          border-bottom: 5px solid $secondary;
+          span {
+            flex: 1 1 33%;
+
+            a {
+              font-size: 1.125rem;
+            }
+          }
+        }
+
+        .footer-info {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

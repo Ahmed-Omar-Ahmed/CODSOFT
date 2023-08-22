@@ -12,4 +12,132 @@ body {
 .container {
   width: 100%;
   min-height: 100dvh;
+  background-color: color-mix(in srgb, #0a0a0a 90%, #7692ff);
+  color: #f4f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+.container main {
+  width: 100%;
+  max-width: 900px;
+}
+.container main section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container main section h2 {
+  text-align: center;
+  padding: 1rem 1rem 0 1rem;
+  font-size: 2rem;
+}
+.container main section #tasks .task {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 1rem;
+}
+.container main section #tasks .task .content {
+  padding: 1rem;
+  flex: 1 1 80%;
+}
+.container main section #tasks .task .content input {
+  width: 100%;
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: color-mix(in srgb, #0a0a0a 80%, #f4f0f0);
+  color: #f4f0f0;
+  font-size: 1.125rem;
+  transition: outline 50ms;
+}
+.container main section #tasks .task .content input:focus {
+  border: none;
+  outline: 3px solid #7692ff;
+}
+.container main section #tasks .task .actions {
+  padding: 1rem;
+  flex: 1 1 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.container main section #tasks .task .actions button {
+  padding-block: 0.25rem;
+  padding-inline: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #f4f0f0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  transition: 125ms;
+  display: flex;
+}
+.container main section #tasks .task .actions button.edit:hover {
+  color: #7692ff;
+}
+.container main section #tasks .task .actions button.save:hover {
+  color: #7692ff;
+}
+.container main section #tasks .task .actions button.delete:hover {
+  color: red;
+}
+.container .new-task {
+  width: 100%;
+  max-width: 900px;
+  padding-inline: 1rem;
+}
+.container .new-task form {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.container .new-task form input {
+  width: 100%;
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: color-mix(in srgb, #0a0a0a 80%, #f4f0f0);
+  color: #f4f0f0;
+  font-size: 1.125rem;
+  transition: outline 50ms;
+}
+.container .new-task form input:focus {
+  border: none;
+  outline: 3px solid #7692ff;
+}
+.container .new-task form #new-task-submit {
+  padding-block: 0.25rem;
+  padding-inline: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #f4f0f0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-inline: auto;
+  transition: color 125ms;
+}
+.container .new-task form #new-task-submit:hover {
+  color: color-mix(in srgb, #f4f0f0 50%, #7692ff);
+}
+
+.hidden {
+  display: none !important;
 }/*# sourceMappingURL=style.css.map */
